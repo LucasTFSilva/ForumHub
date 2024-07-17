@@ -24,7 +24,7 @@ public class TopicoService {
         System.out.println(dados);
         System.out.println(autor);
 
-        return null;
+        return new DadosDetalhamentoTopico(topico);
     }
 
     public DadosDetalhamentoTopico atualizarTopico(Long id, DadosAtualizacaoTopico dados){

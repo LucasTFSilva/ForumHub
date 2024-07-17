@@ -24,7 +24,7 @@ public class AutorController {
     @PostMapping
     @Transactional
     public ResponseEntity cadastroAutor(@RequestBody @Valid DadosCadastroAutor dados, UriComponentsBuilder uriBuilder){
-        var autor = new Autor();
+        var autor = new Autor(dados);
         repository.save(autor);
 
         var uri = uriBuilder.path("/autores/{id}")

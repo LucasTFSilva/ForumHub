@@ -13,7 +13,7 @@ public record DadosCriacaoTopico(
         @NotBlank
         String mensagem,
 
-        @NotBlank
+        @NotNull
         Long idAutor,
 
         @NotNull
